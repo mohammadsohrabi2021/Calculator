@@ -1,0 +1,35 @@
+.container{
+    width: 400px;
+}
+.screen{
+    height: 100px;
+    line-height: 100px;
+    padding: 0 20px;
+    font-size: 30px;
+    text-align: right;
+    background-color: #262834;
+    color: #fff;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+}
+.button{
+    width: 100px;
+    height: 80px;
+    color: #fff;
+    background-color: #262834;
+    border:none;
+    outline: 0;
+    cursor: pointer;
+    font-size: 25px;
+    border: 1px solid rgb(92,92,92);
+}
+.color{
+    background-color: #53cbdb;
+    font-weight: bold;
+    color: #262834;
+}
+.twoCol{
+    width: 200px;
+}
