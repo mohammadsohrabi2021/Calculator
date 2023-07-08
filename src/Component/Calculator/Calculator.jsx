@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import dataValueButtonNumber from "../../Data/DataValueButton/DataValueButton";
-
+import { evaluate } from "mathjs";
 import "./Calculator.css";
 const Calculator = () => {
   const [result, setResult] = useState("");
@@ -15,7 +15,7 @@ const Calculator = () => {
     const input = checkInput(e.target.innerText);
 
     if (input === ".") {
-      if (hasDot == true) return;
+      if (hasDot === true) return;
       else setHasDot(true);
     }
     if (input === "+" || input === "-" || input === "*" || input === "/")
@@ -36,7 +36,7 @@ const Calculator = () => {
   };
 
   const equalHandler = () => {
-    setResult(eval(result).toString());
+    setResult(evaluate(result).toString());
     setHasDot(false)
   };
 
